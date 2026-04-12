@@ -1,0 +1,17 @@
+[project]
+name = "learning-fastapi"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "DaviAlencar2",email = "davilt.alencar@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard] (>=0.135.3,<0.136.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
