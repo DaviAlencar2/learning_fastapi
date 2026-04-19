@@ -1,6 +1,6 @@
-from fastapi.testclient import TestClient
-
 from http import HTTPStatus
+
+from fastapi.testclient import TestClient
 
 from learning_fastapi.app import app
 
@@ -13,12 +13,12 @@ def test_root_deve_retornar_ola():
     - A: Assert
     """
 
-    #arrange
+    # arrange
     client = TestClient(app)
 
-    #act
+    # act
     response = client.get('/')
 
-    #assert
+    # assert
     assert response.status_code == HTTPStatus.OK
     assert response.json() == {'message': 'ola'}
